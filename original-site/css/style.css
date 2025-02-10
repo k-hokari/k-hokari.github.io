@@ -1,0 +1,95 @@
+/* --------------------
+CSS
+作成日：2025/02/
+作成者：穗刈瑚乃歌
+サイト名：ひまわりそろばん教室
+-------------------- */
+
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bokutachi Gothic 2";
+    src: url("../img/Boku2-Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------------------------------
+    初期設定
+------------------------------- */
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #32415a;
+    background-color: #ffb37e;
+    font-family: "Bokutachi Gothic 2", suns-serif;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* ------------------------------
+    共通設定
+------------------------------- */
+.wrapper {
+    padding: 65px 40px;
+    display: block;
+}
+
+section {
+    width: 560px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;  
+}
+
+.section-subtitle {
+    font-size: 1.250rem;
+    font-weight: bold;
+}
+
+/* ------------------------------
+    header
+------------------------------- */
+header {
+    width: 560px;
+    background-color: #fff7e8;
+    margin: 0 auto;
+    border-radius: 40px 40px 0 0;
+    padding: 40px;
+}
+
+/* ------------------------------
+    footer
+------------------------------- */
+footer {
+    width: 560px;
+    background-color: #fff7e8;
+    margin: 0 auto;
+    border-radius: 0 0 40px 40px;
+    padding: 40px;
+}
