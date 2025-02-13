@@ -44,11 +44,16 @@ li {
     共通設定
 ------------------------------- */
 .wrapper {
-    padding: 65px 40px;
+    padding: 65px 5%;
     display: block;
 }
 
-section {
+h1 {
+    display: flex;
+    justify-content: center;  
+}
+
+.section-style {
     width: 560px;
     background-color: #ffffff;
     margin: 0 auto;
@@ -80,7 +85,7 @@ header {
     background-color: #fff7e8;
     margin: 0 auto;
     border-radius: 40px 40px 0 0;
-    padding: 40px;
+    padding: 40px 10px;
 }
 
 /* ------------------------------
@@ -92,4 +97,46 @@ footer {
     margin: 0 auto;
     border-radius: 0 0 40px 40px;
     padding: 40px;
+}
+
+/* ------------------------------
+    deco
+------------------------------- */
+.nav-left {
+    writing-mode: vertical-rl;
+    background-color: #ffffff;
+    border-radius: 40px ;
+    font-size: 1.25rem;
+    position: fixed;
+    top: 300px;
+    padding: 60px 5px;
+}
+
+li {
+    display: flex;
+    margin: 0 5px;
+    position: relative;
+}
+
+li:before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f4d8";
+    font-weight: 900;
+    color: #ffb37e;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -100%);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+li:hover:before {
+    opacity: 1;
+}
+
+.right-deco a {
+    position: fixed;
+    top: 300px;
+    right: 5%;
 }
