@@ -51,7 +51,7 @@ li {
     共通設定
 ------------------------------- */
 .wrapper {
-    padding: 65px 3%;
+    padding: 65px 0;
     display: block;
     
 }
@@ -108,11 +108,18 @@ li {
 /* ------------------------------
     deco
 ------------------------------- */
+.left-deco-style {
+    width:calc(50% - 280px);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
 .nav-left {
     writing-mode: vertical-rl;
     background-color: #ffffff;
     border-radius: 40px ;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     position: fixed;
     top: 300px;
     padding: 60px 0px;
@@ -141,10 +148,20 @@ li:hover:before {
     opacity: 1;
 }
 
+.right-deco-style {
+    width:calc(50% - 280px);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
 .right-deco a {
+    width: 260px;
+    height: 260px;
     position: fixed;
-    top: 300px;
-    right: 5%;
+    background-image: url(../img/button-flower.png);
+    right: 0;
+    top: 350px;
 }
 
 /* ------------------------------
