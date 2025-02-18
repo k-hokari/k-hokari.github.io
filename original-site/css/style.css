@@ -24,8 +24,10 @@ html {
 body {
     color: #32415a;
     background-color: #ffb37e;
-    font-family: "Bokutachi Gothic 2", suns-serif;
-    font-size: 1rem;
+    font-family: "Bokutachi Gothic 2", sans-serif;
+    font-size: 1.250rem;
+    line-height: 2;
+    letter-spacing: 1.5px;
 }
 
 img {
@@ -33,7 +35,12 @@ img {
 }
 
 a {
+    color: #32415a;
     text-decoration: none;
+}
+
+a:hover {
+    color: #ffb37e;
 }
 
 li {
@@ -44,13 +51,9 @@ li {
     共通設定
 ------------------------------- */
 .wrapper {
-    padding: 65px 5%;
+    padding: 65px 3%;
     display: block;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;  
+    
 }
 
 .section-style {
@@ -61,42 +64,45 @@ h1 {
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
 }
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: bold;
-    text-align: center;  
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #63c9bb;
 }
 
 .section-subtitle {
-    font-size: 1.250rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    margin: 32px 0 16px;
+}
+
+.section-text {
+    margin-bottom: 20px;
 }
 
 /* ------------------------------
     header
 ------------------------------- */
-header {
+#header {
     width: 560px;
     background-color: #fff7e8;
     margin: 0 auto;
     border-radius: 40px 40px 0 0;
-    padding: 40px 10px;
+    padding: 40px 40px 0;
 }
 
-/* ------------------------------
-    footer
-------------------------------- */
-footer {
-    width: 560px;
-    background-color: #fff7e8;
-    margin: 0 auto;
-    border-radius: 0 0 40px 40px;
-    padding: 40px;
+#header .site-title {
+    height: 150px;
+    background-image: url(../img/sunflower1.png), url(../img/sunflower2.png);
+    background-position: left bottom, right bottom;
 }
 
 /* ------------------------------
@@ -109,16 +115,16 @@ footer {
     font-size: 1.25rem;
     position: fixed;
     top: 300px;
-    padding: 60px 5px;
+    padding: 60px 0px;
 }
 
-li {
+.left-deco li {
     display: flex;
     margin: 0 5px;
     position: relative;
 }
 
-li:before {
+.left-deco li:before {
     font-family: "Font Awesome 6 Free";
     content: "\f4d8";
     font-weight: 900;
@@ -140,3 +146,135 @@ li:hover:before {
     top: 300px;
     right: 5%;
 }
+
+/* ------------------------------
+    classroom
+------------------------------- */
+#classroom {
+    background-image: url('../img/background-wave.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+}
+
+#classroom .section-title {
+    height: 100px;
+    background-image: url(../img/number1.png);
+    background-position: left center;
+}
+
+#classroom .section-subtitle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#classroom .section-bottom {
+    display: flex;
+}
+
+#classroom .section-bottom img {
+    border-radius: 10px;
+    width: 240px;
+    height: 160px;
+}
+
+.img-left {
+    margin-top: 55px;
+}
+
+
+
+/* ------------------------------
+    charm
+------------------------------- */
+#charm {
+    background-image: url('../img/background-wave.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+}
+
+#charm .section-title {
+    height: 100px;
+    background-image: url(../img/number2.png);
+    background-position: left center;
+}
+
+.charm-style {
+    background-image: url(../img/abacus-picture.png);
+    background-position: right center;
+}
+
+/* ------------------------------
+    guidance
+------------------------------- */
+#guidance {
+    background-image: url('../img/background-wave.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+}
+
+#guidance .section-title {
+    height: 100px;
+    background-image: url(../img/number3.png);
+    background-position: left center;
+}
+
+.flex {
+    display: flex;
+}
+
+#guidance .section-bottom {
+    background-image: url(../img/friends.png);
+    background-position: right bottom;
+}
+
+/* ------------------------------
+    contact
+------------------------------- */
+#contact {
+    background-image: url('../img/background-wave.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+}
+
+#contact .section-title {
+    height: 100px;
+    background-image: url(../img/number4.png);
+    background-position: left center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------------
+    footer
+------------------------------- */
+#footer {
+    width: 560px;
+    background-color: #fff7e8;
+    margin: 0 auto;
+    border-radius: 0 0 40px 40px;
+    padding: 40px 40px 20px;
+}
+
+#footer ul {
+    background-image: url(../img/sunflower1.png), url(../img/sunflower2.png);
+    background-position: left bottom, right bottom;
+    margin-bottom: 30px;
+}
+
+#footer li {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#footer li:last-child {
+    margin-bottom: 0;
+}
+
+.copy-right {
+    font-size: 0.625rem;
+    text-align: center;
+}
+
