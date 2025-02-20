@@ -168,6 +168,20 @@ li:hover:before {
     height: 260px;
     background-image: url(../img/button-flower.png);
     top: 350px;
+    color: #32415a;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-deco a:hover {
+    background-image: none;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #63c9bb;
+    border: 5px solid #ffffff
 }
 
 /* ------------------------------
@@ -295,15 +309,26 @@ li:hover:before {
 /* ------------------------------
     button
 ------------------------------- */
-
 #button .section-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     width: 300px;
     height: 65px;
     background-color: #ffb37e;
     text-align: center;
+    align-items: center;
     border-radius: 15px;
+    padding: 8px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#button a:hover {
+    background-color: #63c9bb;
+    color:#ffffff;
+    border: 3px solid #32415a;
 }
 
 /* ------------------------------
