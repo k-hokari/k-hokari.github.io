@@ -205,13 +205,28 @@ li:hover:before {
 }
 
 #classroom .section-bottom {
+    position: relative;
     display: flex;
+    justify-content: center;
 }
 
 #classroom .section-bottom img {
     border-radius: 10px;
     width: 240px;
     height: 160px;
+}
+
+.img-left,
+.img-right {
+    width: 50%;
+    position: relative;
+}
+
+.img-left img,
+.img-right img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .img-left {
@@ -307,6 +322,31 @@ li:hover:before {
 }
 
 /* ------------------------------
+    button
+------------------------------- */
+#button .section-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 65px;
+    background-color: #ffb37e;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 8px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#button a:hover {
+    background-color: #63c9bb;
+    color:#ffffff;
+    border: 3px solid #32415a;
+}
+
+/* ------------------------------
     footer
 ------------------------------- */
 #footer {
@@ -337,3 +377,83 @@ li:hover:before {
     text-align: center;
 }
 
+/* ------------------------------
+    レスポンシブ
+------------------------------- */
+@media screen and (max-width: 1100px) {
+    .left-deco,
+    .right-deco {
+        display: none;
+    }
+}
+
+@media screen and (max-width:560px) {
+    body {
+       letter-spacing: normal; 
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .maincontent {
+        width: 100%;
+    }
+
+    #header,
+    #footer,
+    .section-style {
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    .site-title {
+        font-size: 2.0rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .section-text {
+        margin-bottom: 10px;
+    }
+
+    /* header */
+    #header .site-title {
+        height: 90px;
+    }
+
+    /* classroom */
+    #classroom .section-subtitle {
+        text-align: left;
+    }
+
+    .img-left {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .img-right {
+        width: 70%;
+        position: absolute;
+        top: 10%;
+        right: 0;
+        opacity: 0.9;
+    }
+
+    /* charm */
+    .charm-style {
+        background-image: none;
+    }
+
+    /* guidance */
+    #guidance .section-bottom {
+        background-image: none;
+    }
+}
