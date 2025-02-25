@@ -207,18 +207,18 @@ li:hover:before {
 #classroom .section-bottom {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #classroom .section-bottom img {
     border-radius: 10px;
-    width: 240px;
+    width: 230px;
     height: 160px;
+    filter: drop-shadow(1px 1px 2px #32415a);
 }
 
 .img-left,
 .img-right {
-    width: 50%;
     position: relative;
 }
 
@@ -440,7 +440,6 @@ li:hover:before {
     }
 
     .img-right {
-        width: 70%;
         position: absolute;
         top: 10%;
         right: 0;
