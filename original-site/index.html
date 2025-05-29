@@ -15,6 +15,10 @@ HTML
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/ress@5.0.2/dist/ress.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- スライドショーのCSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <title>ひまわりそろばん教室</title>
 </head>
 <body>
@@ -23,9 +27,16 @@ HTML
             <header id="header">
                 <h1 class="site-title">ひまわりそろばん教室</h1>
             </header>
+
             <section id="main-visual" class="section-style">
-                <img src="./img/mainvisual.png" alt="教室写真">
+                <!-- スライドショー -->
+                <ul class="slideshow">
+                    <li class="slideshow-item slideshow-item1"></li>
+                    <li class="slideshow-item slideshow-item2"></li>
+                    <li class="slideshow-item slideshow-item3"></li>
+                </ul>
             </section>
+
             <div class="left-deco">
                 <div class="left-deco-style">
                     <nav class="nav-left">
@@ -145,5 +156,10 @@ HTML
             </footer>
         </main>
     </div>
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- スライドショーのJS -->
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
