@@ -23,6 +23,9 @@ HTML
     <!-- テキストランダム表示のCSS -->
     <link rel="stylesheet" href="css/random.css">
 
+    <!-- スクロール促す表示のCSS -->
+    <link rel="stylesheet" href="css/scrolldown.css">
+
     <title>ひまわりそろばん教室</title>
 </head>
 <body>
@@ -56,7 +59,10 @@ HTML
             </div>
             <div class="right-deco">
                 <div class="right-deco-style">
-                    <a href="index.html">TOPへ</a>
+                    <!-- スクロールを促す表示（ボタンテキスト切替） -->
+                    <a href="index.html">
+                        <span class="scroll-animate">Scroll</span>
+                    </a>
                 </div>
             </div>
             <!-- 以下、親要素に「randomScroll」子要素に「box」クラスをつけることで、テキストランダム表示 -->
@@ -178,9 +184,14 @@ HTML
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <!-- スライドショーのJS -->
     <script src="js/slideshow.js"></script>
+    
     <!-- テキストランダム表示のJS -->
     <script src="js/random.js"></script>
+
+    <!-- スクロールを促す表示のJS -->
+    <script src="js/scrolldown.js"></script>
 </body>
 </html>

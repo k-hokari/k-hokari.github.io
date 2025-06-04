@@ -1,0 +1,11 @@
+.scroll-animate {
+  display: inline-block; /* inline-blockにすることでテキストのみ対象にする */
+  animation: textScrollMove 1s ease-in-out infinite;
+}
+
+/* テキストが上下に動くアニメーション設定 */
+@keyframes textScrollMove {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
