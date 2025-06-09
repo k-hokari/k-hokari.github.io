@@ -29,7 +29,7 @@ HTML
     <title>ひまわりそろばん教室</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div id="top" class="wrapper">
         <main class="maincontent">
             <header id="header">
                 <h1 class="site-title">ひまわりそろばん教室</h1>
@@ -47,8 +47,9 @@ HTML
             <div class="left-deco">
                 <div class="left-deco-style">
                     <nav class="nav-left">
-                        <ul>
-                            <li><a href="index.html">ホーム</a></li>
+                        <!-- ページ内指定の場所にスクロール -->
+                        <ul id="page-link">
+                            <li><a href="#top">ホーム</a></li>
                             <li><a href="#classroom">ひまわりそろばん教室</a></li>
                             <li><a href="#charm">そろばんの魅力</a></li>
                             <li><a href="#guidance">教室案内</a></li>
@@ -59,8 +60,9 @@ HTML
             </div>
             <div class="right-deco">
                 <div class="right-deco-style">
-                    <!-- スクロールを促す表示（ボタンテキスト切替） -->
-                    <a href="index.html">
+                    <!-- ページトップリンク（スクロールの速さが変化） -->
+                    <a id="page-top"  href="#">
+                        <!-- スクロールを促す表示（ボタンテキスト切替） -->
                         <span class="scroll-animate">Scroll</span>
                     </a>
                 </div>
@@ -163,13 +165,13 @@ HTML
                 </div>
             </section>
             <section id="button" class="section-style">
-                <a href="index.html" class="section-btn">TOPへ</a>
+                <a href="#top" class="section-btn btn-style pushdown"><span>TOPへ</span></a>
             </section>
             <footer id=footer>
                 <h1 class="site-title">ひまわりそろばん教室</h1>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">ホーム</a></li>
+                    <ul id="page-link">
+                        <li><a href="#top">ホーム</a></li>
                         <li><a href="#classroom">ひまわりそろばん教室</a></li>
                         <li><a href="#charm">そろばんの魅力</a></li>
                         <li><a href="#guidance">教室案内</a></li>
@@ -184,6 +186,7 @@ HTML
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <!-- スライドショーのJS -->
     <script src="js/slideshow.js"></script>
@@ -193,5 +196,11 @@ HTML
 
     <!-- スクロールを促す表示のJS -->
     <script src="js/scrolldown.js"></script>
+
+    <!-- ページトップリンク（スクロールの速さが変化）のJS -->
+    <script src="js/pagetop-link.js"></script>
+
+    <!-- ページ内指定の場所にスクロールのJS -->
+    <script src="js/page-link.js"></script>
 </body>
 </html>
